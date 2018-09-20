@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "next": "^7.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "name": "hello-cothority",
+  "version": "1.0.0",
+  "description": "A frontend that connects to conodes",
+  "main": "pages/index.js",
+  "repository": "git@github.com:blockchainstudentassociation/hello-cothority.git",
+  "author": "Louis Merlin <louis.merlin@epfl.ch>",
+  "license": "MIT"
+}
