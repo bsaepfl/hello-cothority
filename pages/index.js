@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import identity, { net } from '@dedis/cothority'
 import fetch from 'isomorphic-unfetch'
+import toml from 'toml'
 import 'babel-polyfill'
 
 export default class Index extends Component {
@@ -10,10 +11,11 @@ export default class Index extends Component {
   }
 
   static async getInitialProps () {
-    const serversRes = await fetch('https://skipchain.dedis.ch/index.js')
-    const cothorityRes = await fetch('https://raw.githubusercontent.com/dedis/cothority/master/dedis-cothority.toml')
-    const servers = (await serversRes.json()).Blocks[0].Servers
-    const cothority = await cothorityRes.text()
+    const res = await fetch('https://raw.githubusercontent.com/dedis/cothority/master/dedis-cothority.toml')
+    const file = await res.text()
+    console.log(file)
+    const servers = toml.parse(file).servers
+    const cothority = file
     return { servers, cothority }
   }
 
@@ -26,15 +28,28 @@ export default class Index extends Component {
 
   render () {
     return (
-      <div>
+      <div className="container">
         <h1>Hello, Cothority</h1>
-        <h3>List of official conodes:</h3>
+        <h2>List of official conodes:</h2>
         <ul>
           {this.props.servers.map(server => (
-            <li key={server}>{server}</li>
+            <li key={server.Public}><strong>{server.Description}</strong> [{server.Address}]</li>
           ))}
         </ul>
-        <h3>Connected to {this.state.serverDescription}</h3>
+        {this.state.serverDescription ?
+          <h2>Connected to {this.state.serverDescription}</h2> :
+          <h2>Connecting to a conode...</h2>
+        }
+        <style jsx>{`
+          .container {
+            font-family: sans-serif;
+            max-width: 640px;
+            margin: auto;
+          }
+          h1 {
+            text-align: center;
+          }
+        `}</style>
       </div>
     )
   }
