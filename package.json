@@ -9,7 +9,8 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next export",
+    "deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "standard"
   },
@@ -21,6 +22,7 @@
   "author": "Louis Merlin <louis.merlin@epfl.ch>",
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^2.0.0",
     "standard": "^12.0.1"
   }
 }
