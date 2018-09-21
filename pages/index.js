@@ -4,8 +4,8 @@ import fetch from 'isomorphic-unfetch'
 import 'babel-polyfill'
 
 export default class Index extends Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
     this.state = { serverDescription: '' }
   }
 
@@ -17,8 +17,8 @@ export default class Index extends Component {
     return { servers, cothority }
   }
 
-  async componentDidMount() {
-    const socket = new net.RosterSocket(identity.Roster.fromTOML(this.props.cothority), 'Status');
+  async componentDidMount () {
+    const socket = new net.RosterSocket(identity.Roster.fromTOML(this.props.cothority), 'Status')
     const res = await socket.send('status.Request', 'Response', {})
     const serverDescription = await res.serveridentity.description
     this.setState({ serverDescription })
