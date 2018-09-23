@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@dedis/cothority": "^1.1.17",
+    "@louismerlin/cothority": "^1.1.25",
     "babel-polyfill": "^6.26.0",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^7.0.0",

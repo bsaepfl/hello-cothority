@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import identity, { net } from '@dedis/cothority'
+import identity, { net } from '@louismerlin/cothority'
 import fetch from 'isomorphic-unfetch'
 import toml from 'toml'
 import 'babel-polyfill'
