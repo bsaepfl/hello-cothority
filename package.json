@@ -18,13 +18,11 @@
     "toml": "^2.3.3"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.0",
     "standard": "^12.0.1"
   },
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
-    "deploy": "touch out/.nojekyll && gh-pages -d out -t",
     "start": "next start",
     "lint": "standard"
   }
