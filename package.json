@@ -1,6 +1,13 @@
 {
+  "name": "hello-cothority",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "A frontend that connects to conodes",
+  "author": "Louis Merlin <louis.merlin@epfl.ch>",
+  "main": "pages/index.js",
+  "repository": "git@github.com:blockchainstudentassociation/hello-cothority.git",
   "dependencies": {
-    "@louismerlin/cothority": "^1.1.25",
+    "@dedis/cothority": "^1.1.17",
     "@zeit/next-css": "^1.0.1",
     "babel-polyfill": "^6.26.0",
     "bulma": "^0.7.1",
@@ -10,22 +17,15 @@
     "react-dom": "^16.5.2",
     "toml": "^2.3.3"
   },
+  "devDependencies": {
+    "gh-pages": "^2.0.0",
+    "standard": "^12.0.1"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
     "deploy": "touch out/.nojekyll && gh-pages -d out -t",
     "start": "next start",
     "lint": "standard"
-  },
-  "name": "hello-cothority",
-  "version": "1.0.0",
-  "description": "A frontend that connects to conodes",
-  "main": "pages/index.js",
-  "repository": "git@github.com:blockchainstudentassociation/hello-cothority.git",
-  "author": "Louis Merlin <louis.merlin@epfl.ch>",
-  "license": "MIT",
-  "devDependencies": {
-    "gh-pages": "^2.0.0",
-    "standard": "^12.0.1"
   }
 }

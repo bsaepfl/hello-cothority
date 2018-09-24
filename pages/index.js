@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import identity, { net } from '@louismerlin/cothority'
+import identity, { net } from '@dedis/cothority'
 import fetch from 'isomorphic-unfetch'
 import toml from 'toml'
 import 'babel-polyfill'
@@ -14,7 +14,6 @@ export default class Index extends Component {
   static async getInitialProps () {
     const res = await fetch('https://raw.githubusercontent.com/dedis/cothority/master/dedis-cothority.toml')
     const file = await res.text()
-    console.log(file)
     const servers = toml.parse(file).servers
     const cothority = file
     return { servers, cothority }

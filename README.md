@@ -5,6 +5,8 @@ A frontend that connects to conodes
 
 The goal of this repository is to create a frontend, that connects and interacts with conodes from the cothority framework.
 
+For now, the page only works in local. In the future it will be deployed to the blockchainstudentassociation servers.
+
 It uses [next.js](https://nextjs.org/).
 
 ## Setup
