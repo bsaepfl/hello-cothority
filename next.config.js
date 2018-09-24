@@ -1,8 +1,11 @@
+const withCSS = require('@zeit/next-css')
+
 const isProd = (process.env.NODE_ENV || 'production') === 'production'
 
 module.exports = {
+  ...withCSS(),
   exportPathMap: () => ({
-    '/': { page: '/' },
+    '/': { page: '/' }
   }),
-  assetPrefix: isProd ? '/hello-cothority' : '',
+  assetPrefix: isProd ? '/hello-cothority' : ''
 }

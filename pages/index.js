@@ -3,6 +3,7 @@ import identity, { net } from '@louismerlin/cothority'
 import fetch from 'isomorphic-unfetch'
 import toml from 'toml'
 import 'babel-polyfill'
+import 'bulma/css/bulma.css'
 
 export default class Index extends Component {
   constructor (props) {
@@ -28,26 +29,32 @@ export default class Index extends Component {
 
   render () {
     return (
-      <div className="container">
-        <h1>Hello, Cothority</h1>
-        <h2>List of official conodes:</h2>
-        <ul>
-          {this.props.servers.map(server => (
-            <li key={server.Public}><strong>{server.Description}</strong> [{server.Address}]</li>
-          ))}
-        </ul>
-        {this.state.serverDescription ?
-          <h2>Connected to {this.state.serverDescription}</h2> :
-          <h2>Connecting to a conode...</h2>
+      <div className='container'>
+        <h1 className='title is-1'>Hello, <span className='has-text-conode'>Cothority</span></h1>
+        <h2 className='title is-3'>List of official <span className='has-text-conode'>conodes</span>:</h2>
+        <table className='table is-fullwidth is-hoverable'>
+          <tbody>
+            {this.props.servers.map(server => (
+              <tr key={server.Public}><td>{server.Description}</td><td>{server.Address}</td></tr>
+            ))}
+          </tbody>
+        </table>
+        <br />
+        {this.state.serverDescription
+          ? <h2 className='title is-3'>Connected to <span className='has-text-conode'>{this.state.serverDescription}</span></h2>
+          : <h2 className='title is-3'>Connecting to a <span className='has-text-conode'>conode</span>...</h2>
         }
         <style jsx>{`
           .container {
             font-family: sans-serif;
-            max-width: 640px;
+            max-width: 800px;
             margin: auto;
           }
           h1 {
             text-align: center;
+          }
+          .has-text-conode {
+            color: #154c8e;
           }
         `}</style>
       </div>
