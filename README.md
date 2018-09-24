@@ -7,7 +7,9 @@ The goal of this repository is to create a frontend, that connects and interacts
 
 For now, the page only works in local. In the future it will be deployed to the blockchainstudentassociation servers.
 
-It uses [next.js](https://nextjs.org/).
+This is because the page cannot be served over https (see [here](https://github.com/dedis/cothority/issues/1486))
+
+Made with [next.js](https://nextjs.org/) and [bulma](https://bulma.io/).
 
 ## Setup
 
