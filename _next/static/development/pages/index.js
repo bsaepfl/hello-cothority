@@ -16540,6 +16540,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var toml__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(toml__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var babel_polyfill__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! babel-polyfill */ "./node_modules/babel-polyfill/lib/index.js");
 /* harmony import */ var babel_polyfill__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(babel_polyfill__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var bulma_css_bulma_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! bulma/css/bulma.css */ "./node_modules/bulma/css/bulma.css");
+/* harmony import */ var bulma_css_bulma_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(bulma_css_bulma_css__WEBPACK_IMPORTED_MODULE_7__);
 
 var _jsxFileName = "/home/louis/Code/hello-cothority/pages/index.js";
 
@@ -16566,6 +16568,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -16632,67 +16635,116 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-        className: "jsx-545237510" + " " + "container",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", {
-        className: "jsx-545237510",
+        className: "jsx-1512777504" + " " + 'container',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 32
         },
         __self: this
-      }, "Hello, Cothority"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
-        className: "jsx-545237510",
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", {
+        className: "jsx-1512777504" + " " + 'title is-1',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 33
         },
         __self: this
-      }, "List of official conodes:"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", {
-        className: "jsx-545237510",
+      }, "Hello, ", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+        className: "jsx-1512777504" + " " + 'has-text-conode',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, "Cothority")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
+        className: "jsx-1512777504" + " " + 'title is-3',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 34
         },
         __self: this
+      }, "List of official ", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+        className: "jsx-1512777504" + " " + 'has-text-conode',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }, "conodes"), ":"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("table", {
+        className: "jsx-1512777504" + " " + 'table is-fullwidth is-hoverable',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("tbody", {
+        className: "jsx-1512777504",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
       }, this.props.servers.map(function (server) {
-        return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
+        return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("tr", {
           key: server.Public,
-          className: "jsx-545237510",
+          className: "jsx-1512777504",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 36
+            lineNumber: 38
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("strong", {
-          className: "jsx-545237510",
+        }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("td", {
+          className: "jsx-1512777504",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 36
+            lineNumber: 38
           },
           __self: this
-        }, server.Description), " [", server.Address, "]");
-      })), this.state.serverDescription ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
-        className: "jsx-545237510",
+        }, server.Description), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("td", {
+          className: "jsx-1512777504",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 38
+          },
+          __self: this
+        }, server.Address));
+      }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("br", {
+        className: "jsx-1512777504",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 42
         },
         __self: this
-      }, "Connected to ", this.state.serverDescription) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
-        className: "jsx-545237510",
+      }), this.state.serverDescription ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
+        className: "jsx-1512777504" + " " + 'title is-3',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 44
         },
         __self: this
-      }, "Connecting to a conode..."), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        styleId: "545237510",
-        css: ".container.jsx-545237510{font-family:sans-serif;max-width:640px;margin:auto;}h1.jsx-545237510{text-align:center;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2xvdWlzL0NvZGUvaGVsbG8tY290aG9yaXR5L3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTBDb0IsQUFHb0MsQUFLTCxrQkFDcEIsS0FMa0IsZ0JBQ0osWUFDZCIsImZpbGUiOiIvaG9tZS9sb3Vpcy9Db2RlL2hlbGxvLWNvdGhvcml0eS9wYWdlcy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENvbXBvbmVudCB9IGZyb20gJ3JlYWN0J1xuaW1wb3J0IGlkZW50aXR5LCB7IG5ldCB9IGZyb20gJ0Bsb3Vpc21lcmxpbi9jb3Rob3JpdHknXG5pbXBvcnQgZmV0Y2ggZnJvbSAnaXNvbW9ycGhpYy11bmZldGNoJ1xuaW1wb3J0IHRvbWwgZnJvbSAndG9tbCdcbmltcG9ydCAnYmFiZWwtcG9seWZpbGwnXG5cbmV4cG9ydCBkZWZhdWx0IGNsYXNzIEluZGV4IGV4dGVuZHMgQ29tcG9uZW50IHtcbiAgY29uc3RydWN0b3IgKHByb3BzKSB7XG4gICAgc3VwZXIocHJvcHMpXG4gICAgdGhpcy5zdGF0ZSA9IHsgc2VydmVyRGVzY3JpcHRpb246ICcnIH1cbiAgfVxuXG4gIHN0YXRpYyBhc3luYyBnZXRJbml0aWFsUHJvcHMgKCkge1xuICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKCdodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZGVkaXMvY290aG9yaXR5L21hc3Rlci9kZWRpcy1jb3Rob3JpdHkudG9tbCcpXG4gICAgY29uc3QgZmlsZSA9IGF3YWl0IHJlcy50ZXh0KClcbiAgICBjb25zb2xlLmxvZyhmaWxlKVxuICAgIGNvbnN0IHNlcnZlcnMgPSB0b21sLnBhcnNlKGZpbGUpLnNlcnZlcnNcbiAgICBjb25zdCBjb3Rob3JpdHkgPSBmaWxlXG4gICAgcmV0dXJuIHsgc2VydmVycywgY290aG9yaXR5IH1cbiAgfVxuXG4gIGFzeW5jIGNvbXBvbmVudERpZE1vdW50ICgpIHtcbiAgICBjb25zdCBzb2NrZXQgPSBuZXcgbmV0LlJvc3RlclNvY2tldChpZGVudGl0eS5Sb3N0ZXIuZnJvbVRPTUwodGhpcy5wcm9wcy5jb3Rob3JpdHkpLCAnU3RhdHVzJylcbiAgICBjb25zdCByZXMgPSBhd2FpdCBzb2NrZXQuc2VuZCgnc3RhdHVzLlJlcXVlc3QnLCAnUmVzcG9uc2UnLCB7fSlcbiAgICBjb25zdCBzZXJ2ZXJEZXNjcmlwdGlvbiA9IGF3YWl0IHJlcy5zZXJ2ZXJpZGVudGl0eS5kZXNjcmlwdGlvblxuICAgIHRoaXMuc2V0U3RhdGUoeyBzZXJ2ZXJEZXNjcmlwdGlvbiB9KVxuICB9XG5cbiAgcmVuZGVyICgpIHtcbiAgICByZXR1cm4gKFxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgPGgxPkhlbGxvLCBDb3Rob3JpdHk8L2gxPlxuICAgICAgICA8aDI+TGlzdCBvZiBvZmZpY2lhbCBjb25vZGVzOjwvaDI+XG4gICAgICAgIDx1bD5cbiAgICAgICAgICB7dGhpcy5wcm9wcy5zZXJ2ZXJzLm1hcChzZXJ2ZXIgPT4gKFxuICAgICAgICAgICAgPGxpIGtleT17c2VydmVyLlB1YmxpY30+PHN0cm9uZz57c2VydmVyLkRlc2NyaXB0aW9ufTwvc3Ryb25nPiBbe3NlcnZlci5BZGRyZXNzfV08L2xpPlxuICAgICAgICAgICkpfVxuICAgICAgICA8L3VsPlxuICAgICAgICB7dGhpcy5zdGF0ZS5zZXJ2ZXJEZXNjcmlwdGlvbiA/XG4gICAgICAgICAgPGgyPkNvbm5lY3RlZCB0byB7dGhpcy5zdGF0ZS5zZXJ2ZXJEZXNjcmlwdGlvbn08L2gyPiA6XG4gICAgICAgICAgPGgyPkNvbm5lY3RpbmcgdG8gYSBjb25vZGUuLi48L2gyPlxuICAgICAgICB9XG4gICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgICAuY29udGFpbmVyIHtcbiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xuICAgICAgICAgICAgbWF4LXdpZHRoOiA2NDBweDtcbiAgICAgICAgICAgIG1hcmdpbjogYXV0bztcbiAgICAgICAgICB9XG4gICAgICAgICAgaDEge1xuICAgICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgICAgPC9kaXY+XG4gICAgKVxuICB9XG59XG4iXX0= */\n/*@ sourceURL=/home/louis/Code/hello-cothority/pages/index.js */",
+      }, "Connected to ", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+        className: "jsx-1512777504" + " " + 'has-text-conode',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      }, this.state.serverDescription)) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
+        className: "jsx-1512777504" + " " + 'title is-3',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }, "Connecting to a ", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+        className: "jsx-1512777504" + " " + 'has-text-conode',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }, "conode"), "..."), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        styleId: "1512777504",
+        css: ".container.jsx-1512777504{font-family:sans-serif;max-width:800px;margin:auto;}h1.jsx-1512777504{text-align:center;}.has-text-conode.jsx-1512777504{color:#154c8e;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2xvdWlzL0NvZGUvaGVsbG8tY290aG9yaXR5L3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQThDb0IsQUFHb0MsQUFLTCxBQUdKLGNBQ2hCLElBSEEsS0FMa0IsZ0JBQ0osWUFDZCIsImZpbGUiOiIvaG9tZS9sb3Vpcy9Db2RlL2hlbGxvLWNvdGhvcml0eS9wYWdlcy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENvbXBvbmVudCB9IGZyb20gJ3JlYWN0J1xuaW1wb3J0IGlkZW50aXR5LCB7IG5ldCB9IGZyb20gJ0Bsb3Vpc21lcmxpbi9jb3Rob3JpdHknXG5pbXBvcnQgZmV0Y2ggZnJvbSAnaXNvbW9ycGhpYy11bmZldGNoJ1xuaW1wb3J0IHRvbWwgZnJvbSAndG9tbCdcbmltcG9ydCAnYmFiZWwtcG9seWZpbGwnXG5pbXBvcnQgJ2J1bG1hL2Nzcy9idWxtYS5jc3MnXG5cbmV4cG9ydCBkZWZhdWx0IGNsYXNzIEluZGV4IGV4dGVuZHMgQ29tcG9uZW50IHtcbiAgY29uc3RydWN0b3IgKHByb3BzKSB7XG4gICAgc3VwZXIocHJvcHMpXG4gICAgdGhpcy5zdGF0ZSA9IHsgc2VydmVyRGVzY3JpcHRpb246ICcnIH1cbiAgfVxuXG4gIHN0YXRpYyBhc3luYyBnZXRJbml0aWFsUHJvcHMgKCkge1xuICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKCdodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZGVkaXMvY290aG9yaXR5L21hc3Rlci9kZWRpcy1jb3Rob3JpdHkudG9tbCcpXG4gICAgY29uc3QgZmlsZSA9IGF3YWl0IHJlcy50ZXh0KClcbiAgICBjb25zb2xlLmxvZyhmaWxlKVxuICAgIGNvbnN0IHNlcnZlcnMgPSB0b21sLnBhcnNlKGZpbGUpLnNlcnZlcnNcbiAgICBjb25zdCBjb3Rob3JpdHkgPSBmaWxlXG4gICAgcmV0dXJuIHsgc2VydmVycywgY290aG9yaXR5IH1cbiAgfVxuXG4gIGFzeW5jIGNvbXBvbmVudERpZE1vdW50ICgpIHtcbiAgICBjb25zdCBzb2NrZXQgPSBuZXcgbmV0LlJvc3RlclNvY2tldChpZGVudGl0eS5Sb3N0ZXIuZnJvbVRPTUwodGhpcy5wcm9wcy5jb3Rob3JpdHkpLCAnU3RhdHVzJylcbiAgICBjb25zdCByZXMgPSBhd2FpdCBzb2NrZXQuc2VuZCgnc3RhdHVzLlJlcXVlc3QnLCAnUmVzcG9uc2UnLCB7fSlcbiAgICBjb25zdCBzZXJ2ZXJEZXNjcmlwdGlvbiA9IGF3YWl0IHJlcy5zZXJ2ZXJpZGVudGl0eS5kZXNjcmlwdGlvblxuICAgIHRoaXMuc2V0U3RhdGUoeyBzZXJ2ZXJEZXNjcmlwdGlvbiB9KVxuICB9XG5cbiAgcmVuZGVyICgpIHtcbiAgICByZXR1cm4gKFxuICAgICAgPGRpdiBjbGFzc05hbWU9J2NvbnRhaW5lcic+XG4gICAgICAgIDxoMSBjbGFzc05hbWU9J3RpdGxlIGlzLTEnPkhlbGxvLCA8c3BhbiBjbGFzc05hbWU9J2hhcy10ZXh0LWNvbm9kZSc+Q290aG9yaXR5PC9zcGFuPjwvaDE+XG4gICAgICAgIDxoMiBjbGFzc05hbWU9J3RpdGxlIGlzLTMnPkxpc3Qgb2Ygb2ZmaWNpYWwgPHNwYW4gY2xhc3NOYW1lPSdoYXMtdGV4dC1jb25vZGUnPmNvbm9kZXM8L3NwYW4+OjwvaDI+XG4gICAgICAgIDx0YWJsZSBjbGFzc05hbWU9J3RhYmxlIGlzLWZ1bGx3aWR0aCBpcy1ob3ZlcmFibGUnPlxuICAgICAgICAgIDx0Ym9keT5cbiAgICAgICAgICAgIHt0aGlzLnByb3BzLnNlcnZlcnMubWFwKHNlcnZlciA9PiAoXG4gICAgICAgICAgICAgIDx0ciBrZXk9e3NlcnZlci5QdWJsaWN9Pjx0ZD57c2VydmVyLkRlc2NyaXB0aW9ufTwvdGQ+PHRkPntzZXJ2ZXIuQWRkcmVzc308L3RkPjwvdHI+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L3Rib2R5PlxuICAgICAgICA8L3RhYmxlPlxuICAgICAgICA8YnIvPlxuICAgICAgICB7dGhpcy5zdGF0ZS5zZXJ2ZXJEZXNjcmlwdGlvblxuICAgICAgICAgID8gPGgyIGNsYXNzTmFtZT0ndGl0bGUgaXMtMyc+Q29ubmVjdGVkIHRvIDxzcGFuIGNsYXNzTmFtZT0naGFzLXRleHQtY29ub2RlJz57dGhpcy5zdGF0ZS5zZXJ2ZXJEZXNjcmlwdGlvbn08L3NwYW4+PC9oMj5cbiAgICAgICAgICA6IDxoMiBjbGFzc05hbWU9J3RpdGxlIGlzLTMnPkNvbm5lY3RpbmcgdG8gYSA8c3BhbiBjbGFzc05hbWU9J2hhcy10ZXh0LWNvbm9kZSc+Y29ub2RlPC9zcGFuPi4uLjwvaDI+XG4gICAgICAgIH1cbiAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAgIC5jb250YWluZXIge1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XG4gICAgICAgICAgICBtYXgtd2lkdGg6IDgwMHB4O1xuICAgICAgICAgICAgbWFyZ2luOiBhdXRvO1xuICAgICAgICAgIH1cbiAgICAgICAgICBoMSB7XG4gICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5oYXMtdGV4dC1jb25vZGUge1xuICAgICAgICAgICAgY29sb3I6ICMxNTRjOGU7XG4gICAgICAgICAgfVxuICAgICAgICBgfTwvc3R5bGU+XG4gICAgICA8L2Rpdj5cbiAgICApXG4gIH1cbn1cbiJdfQ== */\n/*@ sourceURL=/home/louis/Code/hello-cothority/pages/index.js */",
         __self: this
       }));
     }
@@ -16790,5 +16842,5 @@ module.exports = dll_5d62d38be3592dca3a42;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=index.js.map
