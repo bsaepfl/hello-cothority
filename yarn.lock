@@ -1138,9 +1138,9 @@ bluebird@^3.5.0, bluebird@^3.5.1:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.2.tgz#1be0908e054a751754549c270489c1505d4ab15a"
 
-blulma@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/blulma/-/blulma-1.0.3.tgz#613e67ecf8d975c18719aea8281c52a3aea780ba"
+blulma@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/blulma/-/blulma-1.0.4.tgz#dac1831687cbd9ba7d68399582e3992148ef43d8"
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.11.8, bn.js@^4.4.0:
   version "4.11.8"
