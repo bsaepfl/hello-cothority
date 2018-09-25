@@ -3,7 +3,7 @@ import identity, { net } from '@dedis/cothority'
 import fetch from 'isomorphic-unfetch'
 import toml from 'toml'
 import 'babel-polyfill'
-import 'bulma/css/bulma.css'
+import 'blulma/blulma.css'
 
 export default class Index extends Component {
   constructor (props) {
@@ -29,8 +29,8 @@ export default class Index extends Component {
   render () {
     return (
       <div className='container'>
-        <h1 className='title is-1'>Hello, <span className='has-text-conode'>Cothority</span></h1>
-        <h2 className='title is-3'>List of official <span className='has-text-conode'>conodes</span>:</h2>
+        <h1 className='title is-1'>Hello, <span className='has-text-link'>Cothority</span></h1>
+        <h2 className='title is-3'>List of official <span className='has-text-link'>conodes</span>:</h2>
         <table className='table is-fullwidth is-hoverable'>
           <tbody>
             {this.props.servers.map(server => (
@@ -40,20 +40,16 @@ export default class Index extends Component {
         </table>
         <br />
         {this.state.serverDescription
-          ? <h2 className='title is-3'>Connected to <span className='has-text-conode'>{this.state.serverDescription}</span></h2>
-          : <h2 className='title is-3'>Connecting to a <span className='has-text-conode'>conode</span>...</h2>
+          ? <h2 className='title is-3'>Connected to <span className='has-text-link'>{this.state.serverDescription}</span></h2>
+          : <h2 className='title is-3'>Connecting to a <span className='has-text-link'>conode</span>...</h2>
         }
         <style jsx>{`
           .container {
-            font-family: sans-serif;
             max-width: 800px;
             margin: auto;
           }
           h1 {
             text-align: center;
-          }
-          .has-text-conode {
-            color: #154c8e;
           }
         `}</style>
       </div>

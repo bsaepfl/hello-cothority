@@ -10,7 +10,7 @@
     "@dedis/cothority": "^1.1.17",
     "@zeit/next-css": "^1.0.1",
     "babel-polyfill": "^6.26.0",
-    "bulma": "^0.7.1",
+    "blulma": "1.0.3",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^7.0.0",
     "react": "^16.5.2",
