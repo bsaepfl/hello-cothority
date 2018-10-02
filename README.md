@@ -9,7 +9,9 @@ For now, the page only works in local. In the future it will be deployed to the 
 
 This is because the page cannot be served over https (see [here](https://github.com/dedis/cothority/issues/1486))
 
-Made with [next.js](https://nextjs.org/) and [bulma](https://bulma.io/).
+Made with [React](https://reactjs.org/) and [bulma](https://bulma.io/).
+
+Also see [create-react-app](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md)
 
 ## Setup
 
@@ -29,7 +31,7 @@ yarn
 Run the project:
 
 ```
-yarn dev
+yarn start
 ```
 
 Now browse to [localhost:3000](http://localhost:3000/) :smile:

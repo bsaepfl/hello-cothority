@@ -8,22 +8,30 @@
   "repository": "https://github.com/bsaepfl/hello-cothority",
   "dependencies": {
     "@dedis/cothority": "^1.1.17",
-    "@zeit/next-css": "^1.0.1",
-    "babel-polyfill": "^6.26.0",
     "blulma": "^1.0.4",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^7.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-scripts": "2.0.3",
     "toml": "^2.3.3"
   },
   "devDependencies": {
     "standard": "^12.0.1"
   },
   "scripts": {
-    "dev": "next",
-    "build": "next build && next export",
-    "start": "next start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "lint": "standard"
-  }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
