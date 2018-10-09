@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch,
   Link,
@@ -18,7 +18,7 @@ class App extends Component {
       <Router>
         <div className='container'>
           <section className='section'>
-            <h1 className='title is-1'>Hello, <span className='has-text-link'>Cothority</span></h1>
+            <h1 className='title is-1'>Hello, <span className='has-text-link'>Cothority</span> !</h1>
             <Switch>
               <Route path='/conode' component={Conode} />
               <Route path='/skipchain' component={Skipchain} />
