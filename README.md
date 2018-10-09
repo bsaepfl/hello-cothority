@@ -1,9 +1,11 @@
 # hello-cothority
-A frontend that connects to conodes
+A mobile-first progressive web app for all things cothority
 
 ## Info
 
-The goal of this repository is to create a frontend, that connects and interacts with conodes from the cothority framework.
+The goal of this repository is to create a mobile-first progressive web app that connects and interacts with conodes from the cothority framework.
+
+The goal is to have a conode explorer, a skipchain explorer, and proof of personhood features.
 
 For now, the page only works in local. In the future it will be deployed to the blockchainstudentassociation servers.
 
