@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
+  Link,
   Redirect
 } from 'react-router-dom'
 import Conode from './views/conode'
@@ -16,15 +17,40 @@ class App extends Component {
     return (
       <Router>
         <div className='container'>
-          <h1 className='title is-1'>Hello, <span className='has-text-link'>Cothority</span></h1>
-          <Switch>
-            <Route path='/conode' component={Conode} />
-            <Route path='/skipchain' component={Skipchain} />
-            <Route path='/personhood' component={Personhood} />
-            <Route render={() => (
-              <Redirect to='/conode' />
-            )} />
-          </Switch>
+          <section className='section'>
+            <h1 className='title is-1'>Hello, <span className='has-text-link'>Cothority</span></h1>
+            <Switch>
+              <Route path='/conode' component={Conode} />
+              <Route path='/skipchain' component={Skipchain} />
+              <Route path='/personhood' component={Personhood} />
+              <Route render={() => (
+                <Redirect to='/conode' />
+              )} />
+            </Switch>
+            <div className='is-bottom-nav'>
+              <Link to='/conode' className='is-bottom-nav-item'>
+                <span className='title is-3' role='img' aria-label='computer'>
+                  💻
+                </span>
+                <br />
+                conode
+              </Link>
+              <Link to='/skipchain' className='is-bottom-nav-item'>
+                <span className='title is-3' role='img' aria-label='link'>
+                  🔗
+                </span>
+                <br />
+                skipchain
+              </Link>
+              <Link to='/personhood' className='is-bottom-nav-item'>
+                <span className='title is-3' role='img' aria-label='person'>
+                  🤓
+                </span>
+                <br />
+                personhood
+              </Link>
+            </div>
+          </section>
         </div>
       </Router>
     )

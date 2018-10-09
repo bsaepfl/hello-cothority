@@ -1,7 +1,29 @@
+h1 {
+  text-align: center;
+}
+
 .container {
   max-width: 800px;
   margin: auto;
 }
-h1 {
+
+.section {
+  padding-top: 1rem;
+}
+
+.is-bottom-nav {
+  bottom: 0;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: white;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.is-bottom-nav-item {
+  padding: 1em;
   text-align: center;
 }
