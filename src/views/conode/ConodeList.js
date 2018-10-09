@@ -16,10 +16,11 @@ class ConodeList extends Component {
     const res = await fetch('https://raw.githubusercontent.com/dedis/cothority/master/dedis-cothority.toml')
     const file = await res.text()
     const servers = toml.parse(file).servers
+    this.setState({ servers })
     const socket = new net.RosterSocket(identity.Roster.fromTOML(file), 'Status')
     const status = await socket.send('status.Request', 'Response', {})
     const serverDescription = await status.serveridentity.description
-    this.setState({ servers, serverDescription })
+    this.setState({ serverDescription })
   }
 
   render () {
