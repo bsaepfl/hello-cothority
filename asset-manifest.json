@@ -1,7 +1,7 @@
 {
   "main.css": "/hello-cothority/static/css/main.449c3997.chunk.css",
-  "main.js": "/hello-cothority/static/js/main.742fd46b.chunk.js",
-  "main.js.map": "/hello-cothority/static/js/main.742fd46b.chunk.js.map",
+  "main.js": "/hello-cothority/static/js/main.34a4c5f6.chunk.js",
+  "main.js.map": "/hello-cothority/static/js/main.34a4c5f6.chunk.js.map",
   "static/css/1.575ccb08.chunk.css": "/hello-cothority/static/css/1.575ccb08.chunk.css",
   "static/js/1.113cb566.chunk.js": "/hello-cothority/static/js/1.113cb566.chunk.js",
   "static/js/1.113cb566.chunk.js.map": "/hello-cothority/static/js/1.113cb566.chunk.js.map",
@@ -11,6 +11,6 @@
   "static/media/unfetch.mjs": "/hello-cothority/static/media/unfetch.f03ceaf1.mjs",
   "static/css/1.575ccb08.chunk.css.map": "/hello-cothority/static/css/1.575ccb08.chunk.css.map",
   "index.html": "/hello-cothority/index.html",
-  "precache-manifest.ddbc908a70ccc9028743777ed7437f92.js": "/hello-cothority/precache-manifest.ddbc908a70ccc9028743777ed7437f92.js",
+  "precache-manifest.140693e515ec031f59b6a68dda70c197.js": "/hello-cothority/precache-manifest.140693e515ec031f59b6a68dda70c197.js",
   "service-worker.js": "/hello-cothority/service-worker.js"
 }
