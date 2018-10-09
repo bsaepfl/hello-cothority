@@ -8,23 +8,23 @@ self.__precacheManifest = [
     "url": "/hello-cothority/static/js/runtime~main.1b4452e7.js"
   },
   {
-    "revision": "d90c367bde222465a25c",
-    "url": "/hello-cothority/static/js/main.d90c367b.chunk.js"
+    "revision": "742fd46bbd02b5c73dc7",
+    "url": "/hello-cothority/static/js/main.742fd46b.chunk.js"
   },
   {
-    "revision": "bc3e088bddd1a52f8876",
-    "url": "/hello-cothority/static/js/1.bc3e088b.chunk.js"
+    "revision": "113cb5668398abc879c7",
+    "url": "/hello-cothority/static/js/1.113cb566.chunk.js"
   },
   {
-    "revision": "d90c367bde222465a25c",
+    "revision": "742fd46bbd02b5c73dc7",
     "url": "/hello-cothority/static/css/main.449c3997.chunk.css"
   },
   {
-    "revision": "bc3e088bddd1a52f8876",
+    "revision": "113cb5668398abc879c7",
     "url": "/hello-cothority/static/css/1.575ccb08.chunk.css"
   },
   {
-    "revision": "3e888cbc372539515d27947fe7c775f3",
+    "revision": "3f8913cea96f037594326c459d2f0f8c",
     "url": "/hello-cothority/index.html"
   }
 ];
