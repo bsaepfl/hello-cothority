@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": "/conode",
+  "start_url": "/hello-cothority/#/conode",
   "display": "fullscreen",
   "theme_color": "#3fa9f5",
   "background_color": "#ffffff"
