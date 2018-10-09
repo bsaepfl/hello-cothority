@@ -5,7 +5,7 @@ A mobile-first progressive web app for all things cothority
 
 The goal of this repository is to create a mobile-first progressive web app that connects and interacts with conodes from the cothority framework.
 
-The goal is to have a conode explorer, a skipchain explorer, and proof of personhood features.
+The goal is to have a **conode explorer**, a **skipchain explorer**, and **proof of personhood** features.
 
 For now, the page only works in local. In the future it will be deployed to the blockchainstudentassociation servers.
 
@@ -14,6 +14,15 @@ This is because the page cannot be served over https (see [here](https://github.
 Made with [React](https://reactjs.org/) and [bulma](https://bulma.io/).
 
 Also see [create-react-app](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md)
+
+## Future
+
+Potential future features could be:
+- Integrating with the coupons and messaging features being developed by DEDIS
+- Email signature creation using personhood
+- Voting using personhood
+- Questionnaire linked to personhood
+- Conode representation using personhood badge
 
 ## Setup
 
