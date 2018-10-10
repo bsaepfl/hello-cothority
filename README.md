@@ -7,6 +7,8 @@ The goal of this repository is to create a mobile-first progressive web app that
 
 The goal is to have a **conode explorer**, a **skipchain explorer**, and **proof of personhood** features.
 
+See [here](https://github.com/dedis/popcoins/tree/master/app/shared/lib/dedjs/object/pop) for an implementation of proof of personhood by DEDIS in javascript.
+
 For now, the page only works in local. In the future it will be deployed to the blockchainstudentassociation servers.
 
 This is because the page cannot be served over https (see [here](https://github.com/dedis/cothority/issues/1486))
