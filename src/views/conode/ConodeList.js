@@ -26,18 +26,20 @@ class ConodeList extends Component {
   render () {
     return (
       <>
-        <h2 className='title is-3'>List of official <span className='has-text-link'>conodes</span>:</h2>
-        <table className='table is-fullwidth is-hoverable'>
-          <tbody>
-            {this.state.servers.map(server => (
-              <tr key={server.Public}><td>{server.Description}</td><td>{server.Address}</td></tr>
-            ))}
-          </tbody>
-        </table>
+        <h2 className='title is-3'>List of official <span className='has-text-primary'>conodes</span>:</h2>
+        <div style={{overflow: 'auto', width: '100%'}}>
+          <table className='table is-fullwidth is-hoverable'>
+            <tbody>
+              {this.state.servers.map(server => (
+                <tr key={server.Public}><td>{server.Description}</td><td>{server.Address}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
         <br />
         {this.state.serverDescription
-          ? <h2 className='title is-3'>Connected to <span className='has-text-link'>{this.state.serverDescription}</span></h2>
-          : <h2 className='title is-3'>Connecting to a <span className='has-text-link'>conode</span>...</h2>
+          ? <h2 className='title is-3'>Connected to <span className='has-text-primary'>{this.state.serverDescription}</span></h2>
+          : <h2 className='title is-3'>Connecting to a <span className='has-text-primary'>conode</span>...</h2>
         }
       </>
     )
