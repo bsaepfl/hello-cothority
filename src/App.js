@@ -18,7 +18,7 @@ class App extends Component {
       <Router>
         <div className='container'>
           <section className='section'>
-            <h1 className='title is-1'>Hello, <span className='has-text-link'>Cothority</span> !</h1>
+            <h1 className='title is-1'>Hello, <span className='has-text-primary'>Cothority</span> !</h1>
             <Switch>
               <Route path='/conode' component={Conode} />
               <Route path='/skipchain' component={Skipchain} />
@@ -27,8 +27,8 @@ class App extends Component {
                 <Redirect to='/conode' />
               )} />
             </Switch>
-            <div className='is-bottom-nav'>
-              <Link to='/conode' className='is-bottom-nav-item'>
+            <div className='is-bottom-nav navbar is-fixed-bottom'>
+              <Link to='/conode' className='is-bottom-nav-item is-primary'>
                 <span className='title is-3' role='img' aria-label='computer'>
                   💻
                 </span>

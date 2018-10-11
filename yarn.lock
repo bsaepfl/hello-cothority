@@ -1795,10 +1795,10 @@ bluebird@^3.5.1:
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.2.tgz#1be0908e054a751754549c270489c1505d4ab15a"
   integrity sha512-dhHTWMI7kMx5whMQntl7Vr9C6BvV10lFXDAasnqnrMYhXVCzzk6IO9Fo2L75jXHT07WrOngL1WDXOp+yYS91Yg==
 
-blulma@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/blulma/-/blulma-1.0.4.tgz#dac1831687cbd9ba7d68399582e3992148ef43d8"
-  integrity sha512-r8CFU4y7dzc8r3eiv7lDpvZqZOknM2EokCWolFodwJuprWIbLEJw+JsXvFk11i3CeR85R6FKl8q4u8bHWVXv5Q==
+blulma@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/blulma/-/blulma-1.0.5.tgz#f802af1ce95a7616c851983bd4e20b39f3e7fbb1"
+  integrity sha512-DDgf8bSMdATzVH0sOUHHuhJHDWM5i1Ws1n6OmsyK3mAS/krU5o4xiQn/56Yl47blqJEhejeWGs87VcPDwK9aAw==
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.11.8, bn.js@^4.4.0:
   version "4.11.8"
