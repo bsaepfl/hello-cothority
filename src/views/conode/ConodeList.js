@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import fetch from 'isomorphic-unfetch'
 import toml from 'toml'
-import identity, { net } from '@dedis/cothority'
+import Cothoreasy from 'cothoreasy'
 
 class ConodeList extends Component {
   constructor (props) {
     super(props)
     this.state = {
+      coth: {},
       serverDescription: '',
       servers: []
     }
@@ -17,17 +18,17 @@ class ConodeList extends Component {
     const file = await res.text()
     const servers = toml.parse(file).servers
     this.setState({ servers })
-    const socket = new net.RosterSocket(identity.Roster.fromTOML(file), 'Status')
-    const status = await socket.send('status.Request', 'Response', {})
+    const coth = new Cothoreasy()
+    const status = await coth.status()
     const serverDescription = await status.serveridentity.description
-    this.setState({ serverDescription })
+    this.setState({ coth, serverDescription })
   }
 
   render () {
     return (
       <>
         <h2 className='title is-3'>List of official <span className='has-text-primary'>conodes</span>:</h2>
-        <div style={{overflow: 'auto', width: '100%'}}>
+        <div style={{ overflow: 'auto', width: '100%' }}>
           <table className='table is-fullwidth is-hoverable'>
             <tbody>
               {this.state.servers.map(server => (
